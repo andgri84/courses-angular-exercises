@@ -14,4 +14,5 @@ Implementare il componente _navbar_  in modo che:
 Completare il componente _navbar_  in modo che:
 
 - All'elemento selezionato, venga aggiunta la classe `active`.
-- Quando uno dei bottoni viene cliccato, venga emesso un evento che può essere intercettato dal contenitore del componente stesso.
+- Quando uno dei bottoni viene cliccato, venga emesso un evento `select` intercettabile dal contenitore del componente stesso.
+- I valori `title` e `value` dell'elemento cliccato vengano visualizzati nella pagina.

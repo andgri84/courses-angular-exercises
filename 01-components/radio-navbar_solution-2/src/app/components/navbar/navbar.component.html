@@ -1,6 +1,6 @@
 <div class="btn-group" role="group">
   <button *ngFor="let item of data" type="button" class="btn btn-secondary"
-    (click)="onClick($event, item)">
+    (click)="onClick($event, item)" [ngClass]="{'active': item == selectedItem}">
     {{ item.title }}
   </button>
 </div>

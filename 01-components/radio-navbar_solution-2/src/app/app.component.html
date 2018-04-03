@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <app-navbar [data]="navbarData" (select)="onSelect($event);"></app-navbar>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h5>Selected Item</h5>
+      <p>Title: {{selectedItem?.title}}<br />Value: {{selectedItem?.value}}</p>
+    </div>
+  </div>
+</div>
