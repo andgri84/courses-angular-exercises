@@ -8,4 +8,4 @@
 
 ### 01. Components
 
-* __radio-navbar__
+* _radio-navbar_
