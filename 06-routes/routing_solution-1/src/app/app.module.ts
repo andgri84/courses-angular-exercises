@@ -1,13 +1,12 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
-
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +17,8 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
     ProductDetailComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

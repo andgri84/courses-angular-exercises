@@ -4,14 +4,11 @@
 
 Implementare un sistema di _routing_ in modo tale che:
 
-* `RouteConfig` in _*app/routes/app.routes.ts*_
-* Use correct `routerLink` to provide links to Home, Users List and Company List
-* Setup a default route for the `Home` component 
+* Un modulo `app-routing.module` gestisca tutte le routes (_Home_, _About_, _ProductList_).
+* La route di default porti ad _Home_
+* Utilizzi correttamente i `routerLink` per gestire i link ad _Home_, _About_, _ProductList_.
 
 ## Parte 2
 
-Completare la pipe _shout_ in modo che:
-
-- Se viene passato un parametro booleano con valore _true_, venga aggiunto un punto esclamativo (_!_) alla fine del messaggio.
 
 ## Parte 3
