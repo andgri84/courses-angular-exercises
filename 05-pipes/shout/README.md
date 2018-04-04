@@ -8,6 +8,6 @@ Implementare la pipe _shout_ in modo tale che:
 
 ## Parte 2
 
-La pipe _shout_ in modo che:
+Completare la pipe _shout_ in modo che:
 
 - Se viene passato un parametro booleano con valore _true_, venga aggiunto un punto esclamativo (_!_) alla fine del messaggio.
