@@ -1,0 +1,30 @@
+<div class="container">
+<div class="row">
+  <div class="col">
+      <div class="btn-group" role="group">
+          <button type="button" class="btn btn-secondary" (click)="onClick(1)">Section 1</button>
+          <button type="button" class="btn btn-secondary" (click)="onClick(2)">Section 2</button>
+          <button type="button" class="btn btn-secondary" (click)="onClick(3)">Section 3</button>
+      </div>
+  </div>
+</div>
+<div class="row">
+    <div class="col" [ngSwitch]="selectedIndex">
+      <div *ngSwitchCase="undefined">
+        <h4>No Selection</h4>
+      </div>
+      <div *ngSwitchCase="1">
+        <h4>Section 1</h4>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+      </div>
+      <div *ngSwitchCase="2">
+        <h4>Section 2</h4>
+        <p>At vero eos et accusam et justo duo dolores et ea rebum.</p>
+      </div>
+      <div *ngSwitchCase="3">
+        <h4>Section 3</h4>
+        <p> Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+  </div>
+</div>

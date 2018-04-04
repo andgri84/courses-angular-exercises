@@ -4,4 +4,4 @@
 
 Data una applicazione con una barra di navigazione, visualizzare la sezione corrispondente ogni volta che viene cliccato uno degli elementi della barra stessa.
 
-_Nota: esiste più di una soluzione_
+_Nota: non è necessario utilizzare routing._
