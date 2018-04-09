@@ -1,0 +1,20 @@
+<h4>Binding Example</h4>
+
+<div>
+  <p>{{title}}</p>
+</div>
+
+<div>
+  <input type="text" [ngModel]="name1">
+  <p>{{name1}}</p>
+</div>
+
+<div>
+  <input type="text" [ngModel]="name2" (ngModelChange)="name2=$event;">
+  <p>{{name2}}</p>
+</div>
+
+<div>
+  <input type="text" [(ngModel)]="name3">
+  <p>{{name3}}</p>
+</div>
