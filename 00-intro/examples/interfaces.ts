@@ -21,7 +21,7 @@ function printFullName(person: IPerson): void {
 
 let p1: IPerson = {firstName: "Marco", lastName: "Secchi"};
 let p2: any = {firstName: "Mario", lastName: "Rossi"};
-let p3: NotAPerson = new NotAPerson("Giovanna", "D'Arco", 19);
+let p3: IPerson = new NotAPerson("Giovanna", "D'Arco", 19);
 
 printFullName(p1);
 printFullName(p2);
