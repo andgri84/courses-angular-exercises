@@ -1,0 +1,11 @@
+<h4>For Example</h4>
+
+<ul>
+  <li *ngFor="let character of list; let i = index; let odd = odd; let last = last; let first = first;">
+    <span>({{i}}) - id: {{character.id}} - name: {{character.name}} </span>
+    <span *ngIf="!odd">(even) </span>
+    <span *ngIf="odd">(odd) </span>
+    <span *ngIf="first">(first) </span>
+    <span *ngIf="last">(last) </span>
+  </li>
+</ul>
