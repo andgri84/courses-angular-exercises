@@ -1,7 +1,17 @@
 <p>
-    <app-toggle #toggle messageOn="Selected" messageOff="Not Selected"></app-toggle>
+    <app-toggle #toggle1 messageOn="Selected" messageOff="Not Selected"></app-toggle>
 </p>
 
 <p>
-  Status: {{ toggle.isToggled }}
+  Status: {{ toggle1.isToggled }}
+</p>
+
+<hr />
+
+<p>
+  <app-toggle #toggle2 messageOn="On" messageOff="Off"></app-toggle>
+</p>
+
+<p>
+Status: {{ toggle2.isToggled }}
 </p>
