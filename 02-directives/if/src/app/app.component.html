@@ -1,0 +1,9 @@
+<h3>If Example</h3>
+
+<p *ngIf="true">in Page</p>
+<p *ngIf="false">Not in Page</p>
+
+<p *ngIf="flag; then block1; else block2;">Lorem Ipsum</p>
+
+<ng-template #block1>Lorem Ipsum</ng-template>
+<ng-template #block2>Dolor Sit</ng-template>

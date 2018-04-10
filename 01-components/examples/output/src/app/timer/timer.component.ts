@@ -1,5 +1,4 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
 import { timer } from 'rxjs/observable/timer';
 
 @Component({
