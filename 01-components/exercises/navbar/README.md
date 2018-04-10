@@ -4,9 +4,9 @@
 
 Implementare il componente _navbar_  in modo che:
 
-- Accetti come _Input_ un array di oggetti che contengano gli elementi `title` e `value`.
+- Accetti come _Input_ un array di oggetti (pulsanti) che contengano gli elementi `title` e `value`.
 - Il valore di `title` sia mostrato come testo del pulsante.
-- Quando uno dei bottoni viene cliccato, venga tracciato alla console l'oggetto stesso.
+- Quando uno dei pulsanti viene cliccato, venga tracciato alla console l'oggetto stesso.
 
 
 ## Parte 2
