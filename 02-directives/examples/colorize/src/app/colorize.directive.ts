@@ -12,15 +12,15 @@ export class ColorizeDirective implements OnInit {
   }
 
   ngOnInit() {
-    this.togglehighlight();
+    this.toggleHighlight();
   }
 
   @HostListener('click')
-  onclick() {
-    this.togglehighlight();
+  onClick() {
+    this.toggleHighlight();
   }
 
-  togglehighlight() {
+  toggleHighlight() {
     this.el.nativeElement.style.color = this.el.nativeElement.style.color ? null : this.colorizeColor;
   }
 
