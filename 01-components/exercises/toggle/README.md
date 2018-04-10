@@ -12,3 +12,7 @@ Creare un componente _toggle_ che abbia le seguenti caratteristiche:
 Inoltre:
 
 - L'applicazione deve visualizzare lo stato di un componente di questo tipo, aggiunto alla pagina, _senza l'utilizzo di eventi_.
+
+Bonus:
+
+- Inserire la gestione del valore di partenza del toggle (es.: selezionato).

@@ -15,17 +15,20 @@ export class ToggleComponent implements OnInit {
 
   message: string;
 
-  public isToggled = false;
+  @Input() isToggled = false;
 
   constructor() { }
 
   ngOnInit() {
-    this.isToggled = false;
-    this.message = this.messageOff;
+    this.updateMessage();
   }
 
   onClick() {
     this.isToggled = !this.isToggled;
+    this.updateMessage();
+  }
+
+  updateMessage() {
     this.message = this.isToggled ? this.messageOn : this.messageOff;
   }
 
