@@ -25,6 +25,12 @@ export class ChildComponent implements OnInit {
 
     // Example 2
     const timeoutObservable = new Observable(observer => {
+      for (let i = 0; i < 5; i++) {
+        observer.next(i);
+//        if (i === 3) {
+//          observer.complete();
+//        }
+      }
       setTimeout(() => {
           observer.next(42);
       }, 1000);
