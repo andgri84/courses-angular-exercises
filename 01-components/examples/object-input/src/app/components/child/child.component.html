@@ -1,0 +1,19 @@
+<div *ngFor="let employee of data2">
+  <p><em>-{{employee.firstName}}</em></p>
+  <p><em>-{{employee.pastJobs?.toString()}}</em></p>
+  <p><em>-{{employee.actualJob?.paycheck}}</em></p>
+  <p *ngFor="let job of employee.pastJobs">{{job.paycheck}}</p>
+</div>
+
+<hr />
+
+<p>
+  Has error: {{data1.attr.value}}
+</p>
+
+<p>
+  No error: {{data1.attr?.value}}
+</p>
+
+
+

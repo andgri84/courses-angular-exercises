@@ -1,0 +1,5 @@
+<h4>Input Object Example</h4>
+
+<app-child [data1]="data1ToBePassed" [data2]="data2ToBePassed"></app-child>
+
+<button (click)="data1ToBePassed.attr = {value: 3};">Set Attribute</button>
