@@ -6,6 +6,13 @@ let val1 = 5;
 type str = string;
 let val2: str = "Hello";
 
+class User {}
+type Employee = User;
+type Boss = User;
+
+let theEmployee: Employee;
+let theBoss: Boss;
+
 // Union Type
 function logAge (age: number|string) {
     console.log(age);
