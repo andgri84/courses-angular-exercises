@@ -43,6 +43,8 @@
 * * emetta un evento `productBuy` che venga emesso quando riceve l'evento `buy` dal componente `product-footer`
 * * possa ricevere come input un oggetto di tipo `Product`
 
+_Opzionale: provate ad utilizzare la projection per la realizzazione di questo component._
+
 ### Passo 5
 
 * In `app.component.ts` creare due istanze della classe `Product`
