@@ -3,7 +3,7 @@
 ## Requisiti
 
 ### Passo 1
-* Creare una applicazione Angular ed al suo interno aggiungere (in _src > app_) una struttura _components > products_, dove inserire gli elementi elencati nei passi seguenti
+* Creare una applicazione Angular ed al suo interno aggiungere (in _src > app_) una struttura di cartelle _components > products_, dove inserire gli elementi elencati nei passi seguenti.
 
 ### Passo 2
 
