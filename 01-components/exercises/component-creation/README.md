@@ -3,7 +3,7 @@
 ## Requisiti
 
 ### Passo 1
-* Creare una applicazione Angular ed al suo interno aggiungere (in _src > app_) una struttura _components > products_, dove inserire gli elementi elencati nei passi seguenti
+* Creare una applicazione Angular ed al suo interno aggiungere (in _src > app_) una struttura di cartelle _components > products_, dove inserire gli elementi elencati nei passi seguenti.
 
 ### Passo 2
 
@@ -36,12 +36,14 @@
 
 ### Passo 4
 
-* Generare un componente `product` che, tramite `ng-content`:
-* * permetta di visualizzare `product-header` come `ng-content`
-* * permetta di visualizzare `product-content` come `ng-content`
-* * permetta di visualizzare `product-footer` come `ng-content`
+* Generare un componente `product` che:
+* * permetta di visualizzare `product-header`
+* * permetta di visualizzare `product-content`
+* * permetta di visualizzare `product-footer`
 * * emetta un evento `productBuy` che venga emesso quando riceve l'evento `buy` dal componente `product-footer`
 * * possa ricevere come input un oggetto di tipo `Product`
+
+_Opzionale: provate ad utilizzare la projection per la realizzazione di questo component._
 
 ### Passo 5
 
