@@ -1,0 +1,29 @@
+<div class="container">
+  <h5>User Form (Two-Way Data Bound)</h5>
+  <form #userForm="ngForm" (ngSubmit)="submitForm($event, userForm)">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" class="form-control" id="username" required
+      [(ngModel)]="model.username" name="username">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="text" class="form-control" id="password" required
+      [(ngModel)]="model.password" name="password">
+    </div>
+
+    <div class="form-group">
+      <label for="role">Role</label>
+      <select class="form-control" id="role" required
+      [(ngModel)]="model.role" name="role">
+        <option *ngFor="let role of roles" [value]="role">{{role}}</option>
+      </select>
+    </div>
+
+    <p>Data: {{model | json}}</p>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+
+</div>

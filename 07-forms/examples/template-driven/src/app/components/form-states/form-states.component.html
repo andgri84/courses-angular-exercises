@@ -1,0 +1,32 @@
+<div class="container">
+  <h5>User Form (Two-Way Data Bound - States)</h5>
+  <form #userForm="ngForm" (ngSubmit)="submitForm($event, userForm)">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" class="form-control" id="username" required
+      [(ngModel)]="model.username" name="username" #usernameSpy>
+      <span class="spy">{{usernameSpy.className}}</span>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="text" class="form-control" id="password" required
+      [(ngModel)]="model.password" name="password" #passwordSpy>
+      <span class="spy">{{passwordSpy.className}}</span>
+    </div>
+
+    <div class="form-group">
+      <label for="role">Role</label>
+      <select class="form-control" id="role" required
+      [(ngModel)]="model.role" name="role" #roleSpy>
+        <option *ngFor="let role of roles" [value]="role">{{role}}</option>
+      </select>
+      <span class="spy">{{roleSpy.className}}</span>
+    </div>
+
+    <p>Data: {{model | json}}</p>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+
+</div>
