@@ -40,6 +40,8 @@ console.log("\n--- enum ---");
 enum Color {Red, Green, Blue}
 let color: Color = Color.Green;
 console.log(color);
+let enumList: Array<Color> = [Color.Red, Color.Red, Color.Green];
+console.log(enumList);
 
 console.log("\n--- any ---");
 let notSure: any = 4;
